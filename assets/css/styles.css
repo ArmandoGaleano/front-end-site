@@ -1,0 +1,237 @@
+/*RESET*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+::-webkit-input-placeholder {
+  color: #707070;
+  font-weight: 100;
+  font-family: "Lato", sans-serif;
+}
+
+header div.text-top-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px;
+}
+header div.text-top-menu h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+}
+header div.container-nav {
+  position: relative;
+  display: flex;
+  box-shadow: 0 0 10px whitesmoke;
+  padding-top: 70px;
+}
+header div.container-nav nav#main-navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+header div.container-nav nav#main-navigation div.links-left-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+header div.container-nav nav#main-navigation div.links-left-nav a:nth-child(1),
+header div.container-nav nav#main-navigation div.links-left-nav a:nth-child(2) {
+  font-family: "Lato", sans-serif;
+}
+header div.container-nav nav#main-navigation div.links-left-nav a:nth-child(1) {
+  color: #C00018;
+  font-weight: 700;
+  word-spacing: 5px;
+  margin-right: 10px;
+}
+header div.container-nav nav#main-navigation div.links-left-nav a:nth-child(2) {
+  color: #707070;
+}
+header div.container-nav nav#main-navigation div.container-logo {
+  position: absolute;
+  top: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+header div.container-nav nav#main-navigation div.container-direction {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+header div.container-nav nav#main-navigation div.container-direction form#input-search {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+header div.container-nav nav#main-navigation div.container-direction form#input-search input#search {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  width: 150px;
+  border: none;
+  border-bottom: 1px solid #444;
+}
+header div.container-nav nav#main-navigation div.container-direction form#input-search button {
+  background: transparent;
+  border: none;
+}
+header div.container-nav nav#main-navigation div.container-direction div.account-icons a:nth-child(1) {
+  margin-right: 10px;
+}
+header div.container-nav nav#main-navigation div.container-direction div.account-icons a:nth-child(2) {
+  margin-right: 24px;
+}
+header div.container-nav nav#main-navigation div.links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+header div.container-nav nav#main-navigation div.links ul.container-links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 0px;
+  flex-direction: column;
+  background: #222;
+  overflow: hidden;
+  transition: 0.3s height linear;
+}
+header div.container-nav nav#main-navigation div.links ul.container-links li {
+  text-align: center;
+  width: 100%;
+  padding: 15px 0;
+  border-bottom: 1px solid #b4b4b4;
+}
+header div.container-nav nav#main-navigation div.links ul.container-links li a {
+  font-family: "Lato", sans-serif;
+  color: #ececec;
+}
+header div.container-nav nav#main-navigation div.links ul.container-links button {
+  align-self: flex-end;
+  margin-right: 24px;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+header div.container-nav nav#main-navigation div.links ul.container-links button svg {
+  color: white;
+  font-size: 25px;
+}
+header div.container-nav nav#main-navigation div.links ul.container-links[data-active=false] {
+  height: 0px;
+}
+header div.container-nav nav#main-navigation div.links ul.container-links[data-active=true] {
+  height: 100vh;
+  padding: 20px 0;
+}
+header div.container-nav nav#main-navigation div.links button {
+  background: transparent;
+  border: none;
+  align-self: center;
+  padding: 20px;
+}
+header div.container-nav nav#main-navigation div.links button svg.fa-bars {
+  font-size: 30px;
+  color: #444;
+}
+
+@media only screen and (min-width: 576px) {
+  header div.text-top-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7px;
+  }
+  header div.text-top-menu h4 {
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+  }
+  header div.container-nav {
+    position: relative;
+    padding-top: 20px;
+  }
+  header div.container-nav nav#main-navigation {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  header div.container-nav nav#main-navigation div.links-left-nav {
+    align-items: center;
+    width: 33.33%;
+  }
+  header div.container-nav nav#main-navigation div.container-logo {
+    position: relative;
+    width: 33.33%;
+  }
+  header div.container-nav nav#main-navigation div.container-direction {
+    display: flex;
+    justify-content: center;
+    width: 33.33%;
+  }
+  header div.container-nav nav#main-navigation div.container-direction form#input-search {
+    padding: 0;
+  }
+  header div.container-nav nav#main-navigation div.container-direction form#input-search input#search {
+    width: 70%;
+  }
+  header div.container-nav nav#main-navigation div.container-direction div.account-icons {
+    display: flex;
+  }
+  header div.container-nav nav#main-navigation div.links {
+    width: 100%;
+    max-width: 820px;
+    margin-top: 30px;
+  }
+  header div.container-nav nav#main-navigation div.links ul.container-links {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100% !important;
+    flex-direction: row;
+    background: white;
+    overflow: unset;
+  }
+  header div.container-nav nav#main-navigation div.links ul.container-links li {
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: none;
+  }
+  header div.container-nav nav#main-navigation div.links ul.container-links li a {
+    color: #444;
+  }
+  header div.container-nav nav#main-navigation div.links ul.container-links button {
+    display: none;
+  }
+  header div.container-nav nav#main-navigation div.links button {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  div.container-logo img {
+    height: 60px;
+  }
+
+  header div.text-top-menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  header div.text-top-menu h4:nth-child(2) {
+    margin: 0 50px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
