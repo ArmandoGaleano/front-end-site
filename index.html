@@ -45,9 +45,9 @@
                 </div>
                 <div class="links">
                     <ul class="container-links" data-active="false">
-                            <button class="toggle-menu">
-                                <i class="fas fa-times-circle"></i>
-                            </button>
+                        <button class="toggle-menu">
+                            <i class="fas fa-times-circle"></i>
+                        </button>
                         <li><a href="#">NOVIDADES</a></li>
                         <li><a href="#">FEMININO</a></li>
                         <li><a href="#">MASCULINO</a></li>
@@ -61,6 +61,41 @@
         </nav>
         </div>
     </header>
+    <main>
+        <section id="apresentation-carousel">
+            <div class="background-image"></div>
+            <div class="carousel-container">
+                <div class="carousel-item mulherModelo" data-image="./assets/images/mulher-modelo-sentada.jpg"
+                    data-position='1'>
+                    <div class="container-text-carousel">
+                        <div class="absItem">
+                            <div class="line"></div> <span>2020</span>
+                        </div>
+                        <h3>NEW COLLECTION</h3>
+                        <h1>SUMMER</h1>
+                        <p>Loren ipsum dolor site amet consetetur sedipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna.</p>
+                        <div class="buttons">
+                            <button class="btnGender"><a href="#">FEMININO</a></button>
+                            <button class="btnGender"><a href="#">MASCULINO</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-image="./assets/images/Grupo de máscara 51.jpg" data-position='2'>
+
+                </div>
+                <div class="carousel-item" data-image="./assets/images/Grupo de máscara 53.jpg" data-position='3'></div>
+                <div class="controls">
+                    <button onClick="prevItem()">
+                        <img src="./assets/images/icons/arrow-left.svg" alt="Seta para a Esquerda">
+                    </button>
+                    <button onClick="nextItem()">
+                        <img src="./assets/images/icons/arrow-right.svg" alt="Seta para a Direita">
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
