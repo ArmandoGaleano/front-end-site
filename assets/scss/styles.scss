@@ -425,5 +425,138 @@ section#cards {
         }
     }
 }
+
 //CLOSE CARDS
 
+section#moreCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+
+    div.container-moreCards:nth-child(1) {
+        width: 100%;
+    }
+
+    div.container-moreCards:nth-child(2) {
+        width: 100%;
+    }
+
+    div.container-moreCards:nth-child(3) {
+        width: 100%;
+    }
+
+    div.container-moreCards {
+        display: flex;
+        justify-content: center;
+
+
+        div.card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 70%;
+            margin-bottom: 24px;
+            max-width: 340px;
+
+            img {
+                width: 100%;
+            }
+
+            div.content {
+                position: absolute;
+                text-align: center;
+
+                h1 {
+                    color: white;
+                    font-family: $main-font;
+                    font-size: 40px;
+                    text-shadow: 0 0 10px #00000033;
+                    font-weight: 900;
+
+                }
+
+                h1.textBorder {
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: white;
+                    color: transparent;
+                    font-family: $main-font;
+                    font-size: 40px;
+                    text-shadow: 0 0 10px #00000033;
+                }
+
+                h4 {
+                    font-family: $main-font;
+                    color: white;
+                    font-weight: 700;
+                    letter-spacing: 3px;
+                    text-shadow: 0 0 10px black;
+                }
+
+                a {
+
+                    button {
+                        cursor: pointer;
+                        background: transparent;
+                        color: white;
+                        font-family: $main-font;
+                        font-weight: 900;
+                        border: 1px solid white;
+                        padding: 10px 40px;
+                        margin-top: 10px;
+                        transition: 0.3s linear;
+
+                        &:hover {
+                            background: #ffffff47;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: $breakpoint-tablets) {
+    section#moreCards {
+        div.container-moreCards {
+            div.card {
+                div.content {
+                    h1 {
+                        color: white;
+                        font-family: $main-font;
+                        font-size: 3vw;
+                        text-shadow: 0 0 10px #00000033;
+                        font-weight: 900;
+
+                    }
+
+                    h1.textBorder {
+                        -webkit-text-stroke-width: 1px;
+                        -webkit-text-stroke-color: white;
+                        color: transparent;
+                        font-family: $main-font;
+                        font-size: 3vw;
+                        text-shadow: 0 0 10px #00000033;
+                    }
+                }
+            }
+        }
+
+        div.container-moreCards:nth-child(1) {
+            justify-content: flex-end;
+            width: 33.33%;
+        }
+
+        div.container-moreCards:nth-child(2) {
+            width: 33.33%;
+            margin-bottom: 200px;
+        }
+
+        div.container-moreCards:nth-child(3) {
+            width: 33.33%;
+            justify-content: flex-start;
+        }
+    }
+}

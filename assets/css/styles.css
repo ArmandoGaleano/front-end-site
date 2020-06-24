@@ -325,5 +325,106 @@ section#cards div.container-cards:last-child {
     padding-left: 10px;
   }
 }
+section#moreCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+section#moreCards div.container-moreCards:nth-child(1) {
+  width: 100%;
+}
+section#moreCards div.container-moreCards:nth-child(2) {
+  width: 100%;
+}
+section#moreCards div.container-moreCards:nth-child(3) {
+  width: 100%;
+}
+section#moreCards div.container-moreCards {
+  display: flex;
+  justify-content: center;
+}
+section#moreCards div.container-moreCards div.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 70%;
+  margin-bottom: 24px;
+  max-width: 340px;
+}
+section#moreCards div.container-moreCards div.card img {
+  width: 100%;
+}
+section#moreCards div.container-moreCards div.card div.content {
+  position: absolute;
+  text-align: center;
+}
+section#moreCards div.container-moreCards div.card div.content h1 {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+  text-shadow: 0 0 10px #00000033;
+  font-weight: 900;
+}
+section#moreCards div.container-moreCards div.card div.content h1.textBorder {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  color: transparent;
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+  text-shadow: 0 0 10px #00000033;
+}
+section#moreCards div.container-moreCards div.card div.content h4 {
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-shadow: 0 0 10px black;
+}
+section#moreCards div.container-moreCards div.card div.content a button {
+  cursor: pointer;
+  background: transparent;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  border: 1px solid white;
+  padding: 10px 40px;
+  margin-top: 10px;
+  transition: 0.3s linear;
+}
+section#moreCards div.container-moreCards div.card div.content a button:hover {
+  background: #ffffff47;
+}
+
+@media only screen and (min-width: 768px) {
+  section#moreCards div.container-moreCards div.card div.content h1 {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 3vw;
+    text-shadow: 0 0 10px #00000033;
+    font-weight: 900;
+  }
+  section#moreCards div.container-moreCards div.card div.content h1.textBorder {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    color: transparent;
+    font-family: "Lato", sans-serif;
+    font-size: 3vw;
+    text-shadow: 0 0 10px #00000033;
+  }
+  section#moreCards div.container-moreCards:nth-child(1) {
+    justify-content: flex-end;
+    width: 33.33%;
+  }
+  section#moreCards div.container-moreCards:nth-child(2) {
+    width: 33.33%;
+    margin-bottom: 200px;
+  }
+  section#moreCards div.container-moreCards:nth-child(3) {
+    width: 33.33%;
+    justify-content: flex-start;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
