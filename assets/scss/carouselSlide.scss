@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+$main-font: 'Lato',
+sans-serif;
+$main-color: #C00018;
+$breakpoint-mobile: 576px;
+$breakpoint-tablets: 768px;
+
+div.title-sec-produc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        font-family: $main-font;
+        letter-spacing: 5px;
+    }
+
+    div.container-filter {
+        display: flex;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            button.prod-filter {
+                border: 0;
+                background-color: transparent;
+                font-family: $main-font;
+                font-weight: 100;
+                margin: 0 20px;
+                font-size: 15px;
+            }
+
+            button.prod-filter.active {
+                color: $main-color;
+                font-weight: 700;
+                
+            }
+            div.masc.line.active{
+                margin-top: 5px;
+                width: 50px;
+                height: 2px;
+                background-color: $main-color;
+            }
+            div.femi.line.active{
+                margin-top: 5px;
+                width: 50px;
+                height: 2px;
+                background-color: $main-color;
+            }
+
+        }
+
+    }
+
+}
+
+
+
+section.regular.slider.slick-initialized.slick-slider {
+    display: flex;
+}
+
+button.slick-arrow {
+    background: transparent;
+    border: none;
+    padding: 0 20px;
+}
+
+.slick-slide {
+    background-color: white;
+
+    div.product {
+        transition: 0.3s linear;
+        padding: 10px;
+
+        div.container-product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: 0.3s linear;
+            padding: 10px 0;
+
+            img {
+                width: 100%;
+            }
+
+            h4 {
+                text-align: center;
+                font-family: $main-font;
+                font-weight: 100;
+            }
+
+            h4:nth-child(2) {
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+
+    &:hover {
+        div.product {
+            div.container-product {
+                box-shadow: 0 0 10px rgba(85, 85, 85, 0.63);
+                margin-right: 1px;
+
+            }
+
+        }
+    }
+}

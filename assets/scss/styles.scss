@@ -8,6 +8,11 @@
     text-decoration: none;
 }
 
+main {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
@@ -313,259 +318,112 @@ header {
         }
     }
 }
+
 //CLOSE STYLES FOR HEADER
-
-
-main {
-    width: 100%;
-}
-
-//OPEN STYLES FIRST SECTION CAROUSEL
-section#apresentation-carousel {
-    position: relative;
+//OPEN CARDS
+section#cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    height: 500px;
-    margin: 0 0px;
+    margin-top: 50px;
 
-    div.background-image {
-        position: absolute;
-        background-size: cover;
+    div.container-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
-        height: 80%;
-        z-index: 0;
-    }
 
-    div.carousel-container {
-        position: absolute;
-        width: 88%;
-        height: 100%;
-        $qnt: 3;
-
-        div.carousel-item {
+        div.card {
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
+            width: 70%;
+            margin-bottom: 24px;
 
-            div.container-text-carousel {
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+            img {
+                width: 100%;
+            }
 
-                div.absItem {
-                    display: none!important;
-                }
+            div.content {
+                position: absolute;
+                text-align: center;
 
-                p,
-                h1,
-                h3 {
+                h1 {
                     color: white;
                     font-family: $main-font;
+                    font-size: 50px;
+                    text-shadow: 0 0 10px #00000033;
+                    font-weight: 900;
+
+                }
+
+                h1.textBorder {
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: white;
+                    color: transparent;
+                    font-family: $main-font;
+                    font-size: 50px;
+                    text-shadow: 0 0 10px #00000033;
+                }
+
+                h4 {
+                    font-family: $main-font;
+                    color: white;
+                    font-weight: 700;
+                    letter-spacing: 3px;
                     text-shadow: 0 0 10px black;
                 }
 
-                h1 {
-                    font-size: 15vw;
-                    font-weight: 900;
-                }
+                a {
 
-                h3 {
-                    font-size: 25px;
-                    font-weight: 200;
-                }
-
-                p {
-                    max-width: 250px;
-
-                }
-                div.buttons{
-                    display: flex;
-                    margin-top: 24px;
-                    button.btnGender{
-                        border: 1px solid white;
-                        padding: 10px 20px;
-                        background: rgba(170, 170, 170, 0.315);
-                        box-shadow: 0 0 10px rgba(65, 65, 65, 0.329);
-                        transition: 0.3s linear;
-                        a{
-                            color: white;
-                            font-family: $main-font;
-                            transition: 0.3s linear;
-                        }
-                        &:hover{
-                            background: rgba(204, 204, 204, 0.623);
-                            a{
-                                color: #444;
-                            }
-                        }
-                    }
-                    button.btnGender:last-child{
-
-                        margin-left: 24px;
-                    }
-                }
-            }
-        }
-
-        div.carousel-item.mulherModelo {
-            background-position-x: -110px;
-        }
-
-        @for $i from 1 through $qnt {
-            div.carousel-item[data-position="#{$i}"] {
-                position: absolute;
-                background-size: cover;
-                background-repeat: no-repeat;
-                height: 100%;
-                width: 100%;
-                z-index: ($qnt + 1) - $i;
-            }
-        }
-        div.controls{
-            position: absolute;
-            z-index: 800;
-            bottom: 30px;
-            right: 30px;
-        }
-        .controls button {
-            width: 50px;
-            height: 50px;
-            background: #aaaaaa26;
-            box-shadow: 0 0 10px rgba(65, 65, 65, 0.329);
-            border: 1px solid white;
-        }
-        .controls button:first-child{
-            margin-right:10px;
-        }
-    }
-}
-
-@media only screen and (min-width: $breakpoint-tablets) {
-    section#apresentation-carousel {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 500px;
-        margin: 0 40px;
-
-        div.carousel-container {
-            position: absolute;
-            width: 88%;
-            height: 100%;
-            opacity: 1;
-            $qnt: 10;
-
-            div.carousel-item {
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-                padding-right: 100px;
-
-                div.container-text-carousel {
-                    position: relative;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
-                    div.absItem {
-                        display: flex!important;
-                        position: absolute;
-                        top: 5px;
-                        left: 320px;
-                        align-items: center;
-
-                        div.line {
-                            background: white;
-                            width: 145px;
-                            height: 1px;
-                        }
-
-                        span {
-                            margin-left: 10px;
-                            color: white;
-                            font-family: $main-font;
-                        }
-                    }
-
-                    p,
-                    h1,
-                    h3 {
+                    button {
+                        cursor: pointer;
+                        background: transparent;
                         color: white;
                         font-family: $main-font;
-                        text-shadow: 0 0 10px black;
-                    }
-
-                    h1 {
-                        font-size: 85px;
                         font-weight: 900;
-                    }
+                        border: 1px solid white;
+                        padding: 10px 40px;
+                        margin-top: 10px;
+                        transition: 0.3s linear;
 
-                    h3 {
-                        font-size: 25px;
-                        font-weight: 200;
-                    }
-
-                    p {
-                        max-width: 250px;
-
-                    }
-                    div.buttons{
-                        button.btnGender{
-                            padding: 10px 40px;
-                            background: #aaaaaa26;
-                            box-shadow: 0 0 10px rgba(65, 65, 65, 0.329);
+                        &:hover {
+                            background: #ffffff47;
                         }
                     }
                 }
             }
+        }
+    }
 
-            @for $i from 1 through $qnt {
-                div.carousel-item[data-position="#{$i}"] {
-                    position: absolute;
-                    background-size: cover;
-                    background-position-x: center;
-                    background-repeat: no-repeat;
-                    height: 100%;
-                    width: 100%;
+    div.container-cards:last-child {
+        margin-top: 24px;
+    }
+}
 
-                    @if $i !=1 {
-                        opacity: 0;
-                    }
+@media only screen and (min-width: $breakpoint-mobile) {
+    section#cards {
+        div.container-cards {
+            align-items: unset;
+            width: 50%;
 
-                    z-index: ($qnt + 1) - $i;
-                }
+            div.card {
+                width: 60%;
+                min-width: 250px;
             }
+        }
+
+        div.container-cards:first-child {
+            align-items: flex-end;
+            padding-right: 10px;
+        }
+
+        div.container-cards:last-child {
+            margin-top: 50px;
+            padding-left: 10px;
         }
     }
 }
+//CLOSE CARDS
 
-.fade-in {
-    animation: fadeIn 0.5s linear;
-}
-
-.fade-out {
-    animation: fadeOut 0.5s linear;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}

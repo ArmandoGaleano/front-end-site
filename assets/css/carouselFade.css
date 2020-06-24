@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+section#apresentation-carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  margin: 0 0px;
+}
+section#apresentation-carousel div.background-image {
+  position: absolute;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  z-index: 0;
+}
+section#apresentation-carousel div.carousel-container {
+  position: absolute;
+  width: 88%;
+  height: 100%;
+}
+section#apresentation-carousel div.carousel-container div.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#apresentation-carousel div.carousel-container div.carousel-item div.container-text-carousel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section#apresentation-carousel div.carousel-container div.carousel-item div.container-text-carousel div.absItem {
+  display: none !important;
+}
+section#apresentation-carousel div.carousel-container div.carousel-item div.container-text-carousel p,
+section#apresentation-carousel div.carousel-container div.carousel-item div.container-text-carousel h1,
+section#apresentation-carousel div.carousel-container div.carousel-item div.container-text-carousel h3 {
+  color: white;
+  font-family: "Lato", sans-serif;
+  text-shadow: 0 0 10px black;
+}
+section#apresentation-carousel div.carousel-container div.carousel-item div.container-text-carousel h1 {
+  font-size: 15vw;
+  font-weight: 900;
+}
+section#apresentation-carousel div.carousel-container div.carousel-item div.container-text-carousel h3 {
+  font-size: 25px;
+  font-weight: 200;
+}
+section#apresentation-carousel div.carousel-container div.carousel-item div.container-text-carousel p {
+  max-width: 250px;
+}
+section#apresentation-carousel div.carousel-container div.carousel-item div.container-text-carousel div.buttons {
+  display: flex;
+  margin-top: 24px;
+}
+section#apresentation-carousel div.carousel-container div.carousel-item div.container-text-carousel div.buttons a button.btnGender {
+  cursor: pointer;
+  border: 1px solid white;
+  padding: 10px 20px;
+  background: transparent;
+  box-shadow: 0 0 10px rgba(65, 65, 65, 0.329);
+  transition: 0.3s linear;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+section#apresentation-carousel div.carousel-container div.carousel-item div.container-text-carousel div.buttons a:hover button.btnGender {
+  color: #444;
+  background: rgba(204, 204, 204, 0.623);
+}
+section#apresentation-carousel div.carousel-container div.carousel-item div.container-text-carousel div.buttons a:last-child {
+  margin-left: 24px;
+}
+section#apresentation-carousel div.carousel-container div.carousel-item.mulherModelo {
+  background-position-x: -110px;
+}
+section#apresentation-carousel div.carousel-container div.carousel-item[data-position="1"] {
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+}
+section#apresentation-carousel div.carousel-container div.carousel-item[data-position="2"] {
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+section#apresentation-carousel div.carousel-container div.carousel-item[data-position="3"] {
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+section#apresentation-carousel div.carousel-container div.controls {
+  position: absolute;
+  z-index: 800;
+  bottom: 30px;
+  right: 30px;
+}
+section#apresentation-carousel div.carousel-container .controls button {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  box-shadow: 0 0 10px rgba(65, 65, 65, 0.329);
+  border: 1px solid white;
+  transition: 0.3s linear;
+}
+section#apresentation-carousel div.carousel-container .controls button:hover {
+  background: rgba(255, 255, 255, 0.65);
+  cursor: pointer;
+}
+section#apresentation-carousel div.carousel-container .controls button:first-child {
+  margin-right: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  section#apresentation-carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin: 0 40px;
+  }
+  section#apresentation-carousel div.carousel-container {
+    position: absolute;
+    width: 88%;
+    height: 100%;
+    opacity: 1;
+  }
+  section#apresentation-carousel div.carousel-container div.carousel-item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 100px;
+  }
+  section#apresentation-carousel div.carousel-container div.carousel-item div.container-text-carousel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section#apresentation-carousel div.carousel-container div.carousel-item div.container-text-carousel div.absItem {
+    display: flex !important;
+    position: absolute;
+    top: 5px;
+    left: 320px;
+    align-items: center;
+  }
+  section#apresentation-carousel div.carousel-container div.carousel-item div.container-text-carousel div.absItem div.line {
+    background: white;
+    width: 145px;
+    height: 1px;
+  }
+  section#apresentation-carousel div.carousel-container div.carousel-item div.container-text-carousel div.absItem span {
+    margin-left: 10px;
+    color: white;
+    font-family: "Lato", sans-serif;
+  }
+  section#apresentation-carousel div.carousel-container div.carousel-item div.container-text-carousel p,
+section#apresentation-carousel div.carousel-container div.carousel-item div.container-text-carousel h1,
+section#apresentation-carousel div.carousel-container div.carousel-item div.container-text-carousel h3 {
+    color: white;
+    font-family: "Lato", sans-serif;
+    text-shadow: 0 0 10px black;
+  }
+  section#apresentation-carousel div.carousel-container div.carousel-item div.container-text-carousel h1 {
+    font-size: 85px;
+    font-weight: 900;
+  }
+  section#apresentation-carousel div.carousel-container div.carousel-item div.container-text-carousel h3 {
+    font-size: 25px;
+    font-weight: 200;
+  }
+  section#apresentation-carousel div.carousel-container div.carousel-item div.container-text-carousel p {
+    max-width: 250px;
+  }
+  section#apresentation-carousel div.carousel-container div.carousel-item div.container-text-carousel div.buttons a button.btnGender {
+    padding: 10px 40px;
+    background: transparent;
+  }
+  section#apresentation-carousel div.carousel-container div.carousel-item[data-position="1"] {
+    position: absolute;
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+  }
+  section#apresentation-carousel div.carousel-container div.carousel-item[data-position="2"] {
+    position: absolute;
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 9;
+  }
+  section#apresentation-carousel div.carousel-container div.carousel-item[data-position="3"] {
+    position: absolute;
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 8;
+  }
+  section#apresentation-carousel div.carousel-container div.carousel-item[data-position="4"] {
+    position: absolute;
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 7;
+  }
+  section#apresentation-carousel div.carousel-container div.carousel-item[data-position="5"] {
+    position: absolute;
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 6;
+  }
+  section#apresentation-carousel div.carousel-container div.carousel-item[data-position="6"] {
+    position: absolute;
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 5;
+  }
+  section#apresentation-carousel div.carousel-container div.carousel-item[data-position="7"] {
+    position: absolute;
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 4;
+  }
+  section#apresentation-carousel div.carousel-container div.carousel-item[data-position="8"] {
+    position: absolute;
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 3;
+  }
+  section#apresentation-carousel div.carousel-container div.carousel-item[data-position="9"] {
+    position: absolute;
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 2;
+  }
+  section#apresentation-carousel div.carousel-container div.carousel-item[data-position="10"] {
+    position: absolute;
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 0.5s linear;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s linear;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=carouselFade.css.map */

@@ -121,3 +121,30 @@ const prevItem = () => {
     changeBackgroundImage()
 }
 changeBackgroundImage()
+
+
+//Change filter products
+
+const btnProdFilter = document.querySelectorAll('button.prod-filter');
+const addFilter = (id) => {
+    console.log()
+    const btnMasc = document.querySelector('button#masculino');
+    const btnFemi = document.querySelector('button#feminino');
+    const mascLine = document.querySelector('.masc.line');
+    const femiLine = document.querySelector('.femi.line');
+
+    btnMasc.classList.remove('active');
+    btnFemi.classList.remove('active');
+    mascLine.classList.remove('active');
+    femiLine.classList.remove('active');
+    if (id === 'masculino') {
+        mascLine.classList.add('active');
+        btnMasc.classList.add('active');
+    } else {
+        femiLine.classList.add('active');
+        btnFemi.classList.add('active');
+    }
+}
+btnProdFilter.forEach(btn => {
+    btn.addEventListener('click', () => addFilter(btn.getAttribute('id')))
+})

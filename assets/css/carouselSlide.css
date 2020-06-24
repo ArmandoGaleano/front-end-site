@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+div.title-sec-produc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.title-sec-produc h2 {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 5px;
+}
+div.title-sec-produc div.container-filter {
+  display: flex;
+}
+div.title-sec-produc div.container-filter div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.title-sec-produc div.container-filter div button.prod-filter {
+  border: 0;
+  background-color: transparent;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  margin: 0 20px;
+  font-size: 15px;
+}
+div.title-sec-produc div.container-filter div button.prod-filter.active {
+  color: #C00018;
+  font-weight: 700;
+}
+div.title-sec-produc div.container-filter div div.masc.line.active {
+  margin-top: 5px;
+  width: 50px;
+  height: 2px;
+  background-color: #C00018;
+}
+div.title-sec-produc div.container-filter div div.femi.line.active {
+  margin-top: 5px;
+  width: 50px;
+  height: 2px;
+  background-color: #C00018;
+}
+
+section.regular.slider.slick-initialized.slick-slider {
+  display: flex;
+}
+
+button.slick-arrow {
+  background: transparent;
+  border: none;
+  padding: 0 20px;
+}
+
+.slick-slide {
+  background-color: white;
+}
+.slick-slide div.product {
+  transition: 0.3s linear;
+  padding: 10px;
+}
+.slick-slide div.product div.container-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s linear;
+  padding: 10px 0;
+}
+.slick-slide div.product div.container-product img {
+  width: 100%;
+}
+.slick-slide div.product div.container-product h4 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+}
+.slick-slide div.product div.container-product h4:nth-child(2) {
+  margin-bottom: 10px;
+}
+.slick-slide:hover div.product div.container-product {
+  box-shadow: 0 0 10px rgba(85, 85, 85, 0.63);
+  margin-right: 1px;
+}
+
+/*# sourceMappingURL=carouselslide.css.map */
