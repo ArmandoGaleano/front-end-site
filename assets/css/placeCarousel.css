@@ -80,6 +80,7 @@ div.carousel-address div.text-about div.container-text div.controls button:hover
 }
 div.carousel-address div.text-about div.container-text div.controls button img {
   width: 20px;
+  height: 20px;
 }
 div.carousel-address div.text-about div.container-text div.controls button:first-child {
   margin-right: 10px;

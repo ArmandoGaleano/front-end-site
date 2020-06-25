@@ -35,7 +35,6 @@ const doAnimationCarousel = (type) => {
         //Remove class if exist
         backgroundImage.classList.add('fade-out');
         backgroundImage.classList.remove('fade-in');
-        console.log(backgroundImage)
         for (let i = 1; i <= carouselItems.length; i++) {
             returnItemPosition(i).classList.remove('fade-in');
             returnItemPosition(i).classList.remove('fade-out');
